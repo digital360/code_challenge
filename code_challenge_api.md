@@ -26,16 +26,15 @@ around why we'd do it this way instead of other types of methods
 
 ### API Routes
 ```
-https://{{host}}/v1/php-test/endpoint1
+http://{{host}}/v1/php-test/endpoint1
 ```
 
 ### Expected Request
 ```
-https://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,currency3|thousands,address:lower
+http://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,currency3|thousands,address:lower
 ```
 
 ### Expected Response
-
 ```
 	{
 		"data": [
@@ -57,7 +56,7 @@ https://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,curren
 			}
 		}
 	}
-```	
+```
 
 ### Acceptance Criteria
 To be successfully evaluated, the team at Digital360 must
@@ -69,7 +68,10 @@ have the following:
 - How your solution impacted performance
 - An idea of what you could improve if you had more time
 
-#### Extra Points on code optimisation
+#### Bonus Round
+Bonus points will be given to those who can also find time
+to optimise their code as they're moving through this
+challenge.
 
 ## Team at your disposal
 You have the entire technology team at your disposal, if
@@ -77,7 +79,7 @@ you're conducting this evaluation during a working week, use
 the team to your advantage.
 
 ## Running the API
-From the root run:
+From the root directory run:
 ```
 $ ./build dev
 ```
