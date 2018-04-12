@@ -40,10 +40,10 @@ https://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,curren
 	{
 		"data": [
 			{
-				"company": "Google Inc",
+				"company": "GOOGLE INC",
 				"revenue": "5438997819.433288",
-				"founded_year": 1998,
-				"address": "Menlo Park, California, United States"
+				"founded_year": "1998",
+				"address": "menlo park, california, united states"
 			}
 		],
 		"meta": {
