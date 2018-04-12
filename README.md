@@ -12,6 +12,8 @@ are heavily based on fundamental engineering principles
 and specific products the team at Digital360 have built.
 
 ## Challenges
+Choose your challenge wisely!
+
     ...........███ ]▄▄▄▄▄▃
     ..▂▄▅█████▅▄▃▂
     [███████████████]
