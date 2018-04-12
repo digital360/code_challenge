@@ -36,26 +36,28 @@ http://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,currenc
 
 ### Expected Response
 ```
-	{
-		"data": [
-			{
-				"company": "GOOGLE INC",
-        "revenue": "$ 5,438,997,819.433",
-				"founded_year": "1998",
-				"address": "menlo park, california, united states"
-			}
-		],
-		"meta": {
-			"pagination": {
-				"total": 1,
-				"count": 1,
-				"per_page": 15,
-				"current_page": 1,
-				"total_pages": 1,
-				"links": []
-			}
-		}
-	}
+{
+   "data":[
+      {
+         "company":"GOOGLE INC",
+         "revenue":"$ 5,438,997,819.433",
+         "founded_year":"1998",
+         "address":"menlo park, california, united states"
+      }
+   ],
+   "meta":{
+      "pagination":{
+         "total":1,
+         "count":1,
+         "per_page":15,
+         "current_page":1,
+         "total_pages":1,
+         "links":[
+
+         ]
+      }
+   }
+}
 ```
 
 ### Acceptance Criteria
