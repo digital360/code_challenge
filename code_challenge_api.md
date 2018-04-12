@@ -1,8 +1,8 @@
          _ _       _ _        _ _____  __    ___  
-      __| (_) __ _(_) |_ __ _| |___ / / /_  / _ \ 
+      __| (_) __ _(_) |_ __ _| |___ / / /_  / _ \
      / _` | |/ _` | | __/ _` | | |_ \| '_ \| | | |
     | (_| | | (_| | | || (_| | |___) | (_) | |_| |
-     \__,_|_|\__, |_|\__\__,_|_|____/ \___/ \___/ 
+     \__,_|_|\__, |_|\__\__,_|_|____/ \___/ \___/
              |___/ p𐧻h𐧻p𐧻𐧻c𐧻h𐧻a𐧻l𐧻l𐧻e𐧻n𐧻g𐧻e𐧻𐧻              
 
 # Technical Evaluation
@@ -41,7 +41,7 @@ https://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,curren
 		"data": [
 			{
 				"company": "GOOGLE INC",
-				"revenue": "5438997819.433288",
+        "revenue": "$ 5,438,997,819.433",
 				"founded_year": "1998",
 				"address": "menlo park, california, united states"
 			}
@@ -57,7 +57,7 @@ https://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,curren
 			}
 		}
 	}
-```	
+```
 
 ### Acceptance Criteria
 To be successfully evaluated, the team at Digital360 must
