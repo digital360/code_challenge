@@ -2,8 +2,8 @@
       __| (_) __ _(_) |_ __ _| |___ / / /_  / _ \
      / _` | |/ _` | | __/ _` | | |_ \| '_ \| | | |
     | (_| | | (_| | | || (_| | |___) | (_) | |_| |
-     \__,_|_|\__, |_|\__\__,_|_|____/ \___/ \___/
-             |___/ p𐧻h𐧻p𐧻𐧻c𐧻h𐧻a𐧻l𐧻l𐧻e𐧻n𐧻g𐧻e𐧻𐧻              
+     \__,_|_|\__, |_|\__\__,_|_|____/ \___/ \___/ 
+             |___/ a𐧻p𐧻i𐧻𐧻c𐧻h𐧻a𐧻l𐧻l𐧻e𐧻n𐧻g𐧻e𐧻𐧻              
 
 # Technical Evaluation
 The purpose of this evaluation is to determine not only
@@ -26,16 +26,15 @@ around why we'd do it this way instead of other types of methods
 
 ### API Routes
 ```
-https://{{host}}/v1/php-test/endpoint1
+http://{{host}}/v1/php-test/endpoint1
 ```
 
 ### Expected Request
 ```
-https://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,currency3|thousands,address:lower
+http://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,currency3|thousands,address:lower
 ```
 
 ### Expected Response
-
 ```
 	{
 		"data": [
@@ -69,13 +68,36 @@ have the following:
 - How your solution impacted performance
 - An idea of what you could improve if you had more time
 
-#### Extra Points on code optimisation
+#### Bonus Round
+Bonus points will be given to those who can also find time
+to optimise their code as they're moving through this
+challenge.
 
 ## Team at your disposal
 You have the entire technology team at your disposal, if
 you're conducting this evaluation during a working week, use
 the team to your advantage.
 
-## Running the application
+## Running the API
+From the root directory run:
+```
+$ ./build dev
+```
 
-## Authentication
+### Authentication
+To authenticate, run the following POST request:
+```
+http://{host}/v1/auth/logon
+```
+
+Along with the following JSON body:
+```
+{
+    "email": "{supplied at interview time}",
+    "password": "{supplied at interview time}"
+}
+```
+
+The response will contain the auth token. Get the auth token
+and pass that with any following requests in the header as a
+Bearer Token.
