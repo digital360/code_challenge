@@ -25,10 +25,39 @@ out are as follows:
 around why we'd do it this way instead of other types of methods
 
 ### API Routes
+```
+https://{{host}}/v1/php-test/endpoint1
+```
 
 ### Expected Request
+```
+https://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,currency3|thousands,address:lower
+```
 
 ### Expected Response
+
+```
+	{
+		"data": [
+			{
+				"company": "GOOGLE INC",
+				"revenue": "5438997819.433288",
+				"founded_year": "1998",
+				"address": "menlo park, california, united states"
+			}
+		],
+		"meta": {
+			"pagination": {
+				"total": 1,
+				"count": 1,
+				"per_page": 15,
+				"current_page": 1,
+				"total_pages": 1,
+				"links": []
+			}
+		}
+	}
+```	
 
 ### Acceptance Criteria
 To be successfully evaluated, the team at Digital360 must
@@ -39,6 +68,8 @@ have the following:
 - How you extended the existing codebase
 - How your solution impacted performance
 - An idea of what you could improve if you had more time
+
+#### Extra Points on code optimisation
 
 ## Team at your disposal
 You have the entire technology team at your disposal, if
