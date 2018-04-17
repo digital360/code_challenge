@@ -5,11 +5,15 @@
      \__,_|_|\__, |_|\__\__,_|_|____/ \___/ \___/ 
              |___/ a𐧻p𐧻i𐧻𐧻c𐧻h𐧻a𐧻l𐧻l𐧻e𐧻n𐧻g𐧻e𐧻𐧻              
 
-# Technical Evaluation
+# Technical evaluation
 The purpose of this evaluation is to determine not only
 what you've produced at the end of the day but also how
 you produced it and what you understood about the current
 technical architecture.
+
+The ultimate goal of the API (and overall product) is
+to get it out of the hands of engineering as much as possible,
+please consider this vision when architecting the solution.
 
 Please read through this document thoroughly and feel free
 to ask any questions along the way.
@@ -24,17 +28,17 @@ out are as follows:
 - Analyse our composer file and gain an understading from a high level
 around why we'd do it this way instead of other types of methods
 
-### API Routes
+### API routes
 ```
 http://{{host}}/v1/php-test/endpoint1
 ```
 
-### Expected Request
+### Expected request
 ```
 http://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,currency3|thousands,address:lower
 ```
 
-### Expected Response
+### Expected response
 ```
 {
    "data":[
@@ -60,7 +64,7 @@ http://{{host}}/v1/php-test/endpoint1?format=founded_year:decimal0,upper,currenc
 }
 ```
 
-### Acceptance Criteria
+### Acceptance criteria
 To be successfully evaluated, the team at Digital360 must
 have the following:
 
@@ -70,7 +74,7 @@ have the following:
 - How your solution impacted performance
 - An idea of what you could improve if you had more time
 
-#### Bonus Round
+#### Bonus round
 Bonus points will be given to those who can also find time
 to optimise their code as they're moving through this
 challenge.

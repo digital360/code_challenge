@@ -19,5 +19,5 @@ Choose your challenge wisely!
     [███████████████]
     ◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤
 
-- [Javascript Code Challenge](code_challenge_js.md)
+- [Application Code Challenge](code_challenge_app.md)
 - [API Code Challenge](code_challenge_api.md)
