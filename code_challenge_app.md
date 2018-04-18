@@ -23,6 +23,24 @@ You have the entire technology team at your disposal, if
 you're conducting this evaluation during a working week, use
 the team to your advantage.
 
+### Authentication
+To authenticate, run the following POST request:
+```
+http://{host}/v1/auth/logon
+```
+
+Along with the following JSON body:
+```
+{
+    "email": "{supplied at interview time}",
+    "password": "{supplied at interview time}"
+}
+```
+
+The response will contain the auth token. Get the auth token
+and pass that with any following requests in the header as a
+Bearer Token.
+
 ## The challenges
 The challenges are broken up into 2 pieces in which the team at
 Digital360 will advise which path you must take.
@@ -34,8 +52,8 @@ What we want to see, apart from the way you've coded those
 modules, is also how you think this could be done better from
 an architectural perspective.
 
-We want you to replicate our current [Digital Marketing Overview](http://localhost:8080/digital/digital-marketing/overview)
-module, and our current [Financial Central](http://localhost:8080/advisory/financial-central)
+We want you to replicate our current [Digital Marketing Overview](http://{host}/digital/digital-marketing/overview)
+module, and our current [Financial Central](http://{host}/advisory/financial-central)
 module.
 
 #### Acceptance criteria
@@ -52,7 +70,7 @@ git on the command line or pre-installed SourceTree).
 #### Running the application
 To run the application, simply do the following in bash:
 ```
-$ npm run dev -- https://test.api.engineroom.com.au/v1/
+$ npm run dev -- https://{host}/v1/
 ```
 
 #### Folder structure
@@ -116,12 +134,12 @@ architecting this solution:
 
 ##### Area Chart (GET)
 ```
-https://test.api.engineroom.com.au/v1/modules/592fd0dc1b0f3d006c58714a/data/get-look-data?filter=looker_id:313|from_date:2017-02-19|to_date:2018-02-19|business:59cb5428794a4c0456100b82
+https://{host}/v1/modules/592fd0dc1b0f3d006c58714a/data/get-look-data?filter=looker_id:313|from_date:2017-02-19|to_date:2018-02-19|business:59cb5428794a4c0456100b82
 ```
 
 ##### Pie Chart (GET)
 ```
-https://test.api.engineroom.com.au/v1/modules/592fd0dc1b0f3d006c58714a/data/get-look-data?filter=looker_id:316|from_date:2017-02-19|to_date:2018-02-19|business:59cb5428794a4c0456100b82
+https://{host}/v1/modules/592fd0dc1b0f3d006c58714a/data/get-look-data?filter=looker_id:316|from_date:2017-02-19|to_date:2018-02-19|business:59cb5428794a4c0456100b82
 ```
 
 #### Form
@@ -135,12 +153,12 @@ Consider the following when architecting this solution:
 
 ##### Existing form data (GET)
 ```
-https://test.api.engineroom.com.au/v1/modules/59ac0372d28e0a00ef5bc052/forms/59ac0372d28e0a00ef5bc055/items?filter=business:59cb5428794a4c0456100b82&with=file,business,category,document_type
+https://{host}/v1/modules/59ac0372d28e0a00ef5bc052/forms/59ac0372d28e0a00ef5bc055/items?filter=business:59cb5428794a4c0456100b82&with=file,business,category,document_type
 ```
 
 ##### Storing form data (POST)
 ```
-https://test.api.engineroom.com.au/v1/modules/59ac0372d28e0a00ef5bc052/forms/59ac0372d28e0a00ef5bc055/items?filter=business:59cb5428794a4c0456100b82
+https://{host}/v1/modules/59ac0372d28e0a00ef5bc052/forms/59ac0372d28e0a00ef5bc055/items?filter=business:59cb5428794a4c0456100b82
 ```
 
 > Payload
