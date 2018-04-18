@@ -116,12 +116,12 @@ architecting this solution:
 
 ##### Area Chart (GET)
 ```
-https://test.api.engineroom.com.au/v1/modules/592fd0dc1b0f3d006c58714a/data/get-look-data?looker_id:313|from_date:2017-02-19|to_date:2018-02-19|business:59cb5428794a4c0456100b82
+https://test.api.engineroom.com.au/v1/modules/592fd0dc1b0f3d006c58714a/data/get-look-data?filter=looker_id:313|from_date:2017-02-19|to_date:2018-02-19|business:59cb5428794a4c0456100b82
 ```
 
 ##### Pie Chart (GET)
 ```
-https://test.api.engineroom.com.au/v1/modules/592fd0dc1b0f3d006c58714a/data/get-look-data?looker_id:316|from_date:2017-02-19|to_date:2018-02-19|business:59cb5428794a4c0456100b82
+https://test.api.engineroom.com.au/v1/modules/592fd0dc1b0f3d006c58714a/data/get-look-data?filter=looker_id:316|from_date:2017-02-19|to_date:2018-02-19|business:59cb5428794a4c0456100b82
 ```
 
 #### Form
